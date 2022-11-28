@@ -27,10 +27,17 @@ Although we still can implement 32 point FFT with strategies, we do not have tim
 ## System behavior flowchart 
 
 ## Vitis output 
-input 120 transmitted data  with SNR=10 (6 group, 20 transmitted data for each group)<br>
-compare result with Matlab simulation<br>
+Input 120 transmitted data  with SNR=10 (6 symbols, 20 transmitted data for each symbol)<br>
+Compare data with the golden model simulated by MATLAB<br>
 Zero errors between PYNQ-Z2 hardware and Matlab result
 
 ![image](https://user-images.githubusercontent.com/26044795/204346034-345a57de-1eb1-47f7-901c-78cd3a46cc5a.png)![image](https://user-images.githubusercontent.com/26044795/204346666-9ff47464-1080-4554-a80c-ac48d7d1ee6e.png) ![image](https://user-images.githubusercontent.com/26044795/204346117-03f76af3-fca5-465a-bf4f-80e2bc47e5ba.png)<img src="https://user-images.githubusercontent.com/26044795/204346917-f8395603-d658-4f79-bc89-9995635ed23e.png" width="20%">
 
-input 
+Input 1000 OFDM symbols with SNR=10 (20 transmitted data for each symbol)<br>
+Same with Matlab simulation
+<div align=center><img width = "40%" src="https://user-images.githubusercontent.com/26044795/204349940-a8c8ef15-dfed-4db7-98c6-50b463836213.png"/></div>
+
+
+Input 1000 OFDM symbols with SNR=1 (20 transmitted data for each symbol)<br>
+Demodulated data maintained 99.6\% accuracy<br>
+<div align=center><img width = "40%" src="https://user-images.githubusercontent.com/26044795/204349890-d7c5bf90-8637-4554-a89c-9adc342816c8.png"/></div>
