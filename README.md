@@ -21,7 +21,7 @@ OFDM reciever architecture with 32 point Radix-2 DIT FFT - slices of DSP is not 
 Although we still can implement 32 point FFT with strategies, we do not have time to fix all the bugs during term project.
 
 ## Precision consideration
-
+To specify porper fractional bits on FPGA outcome, we simulate hexadecimal digits on Bit Error Rate (BER) performance corresponding to Signal to Noise Ratio (SNR). To achieve a reasonable result, we use two hex digits as the fractional part.
 <div align=center><img width = "50%" src="https://user-images.githubusercontent.com/26044795/204322379-819b83ff-ab63-46c1-8de2-49c6a95327a7.png"/></div>
 
 ## System behavior flowchart 
